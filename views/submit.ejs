@@ -1,0 +1,76 @@
+<%- include('partials/header.ejs') %>
+
+<div
+  style="max-width: 800px; margin: 50px auto; text-align: center; padding: 20px"
+>
+  <div
+    style="
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <i
+      class="fas fa-key"
+      style="font-size: 6rem; color: #ffc107; transition: transform 0.3s ease"
+      onmouseover="this.style.transform='rotate(15deg) scale(1.1)';"
+      onmouseout="this.style.transform='rotate(0deg) scale(1)';"
+    >
+    </i>
+    <h1
+      style="
+        font-family: Arial, sans-serif;
+        font-size: 2.5rem;
+        color: #343a40;
+        margin-top: 20px;
+      "
+    >
+      Secrets
+    </h1>
+    <p style="font-size: 1.2rem; color: #6c757d; margin: 20px 0">
+      Don't keep your secrets, share them anonymously!
+    </p>
+
+    <form action="/submit" method="POST" style="margin-top: 20px">
+      <div style="margin-bottom: 20px">
+        <input
+          type="text"
+          name="secret"
+          placeholder="What's your secret?"
+          style="
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+          "
+          onfocus="this.style.borderColor='#007bff'; this.style.boxShadow='0 0 8px rgba(0,123,255,0.5)';"
+          onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none';"
+        />
+      </div>
+      <button
+        type="submit"
+        style="
+          padding: 10px 30px;
+          font-size: 1.2rem;
+          color: #fff;
+          background-color: #343a40;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        "
+        onmouseover="this.style.backgroundColor='#495057';"
+        onmouseout="this.style.backgroundColor='#343a40';"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

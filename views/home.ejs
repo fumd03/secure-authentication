@@ -1,0 +1,58 @@
+<%- include('partials/header.ejs') %>
+
+<div
+  style="
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  "
+>
+  <div style="max-width: 600px; margin: 0 auto">
+    <i class="fas fa-key" style="font-size: 6rem; color: #6c757d"></i>
+    <h1
+      style="font-family: 'Arial', sans-serif; font-size: 3rem; margin: 20px 0"
+    >
+      Secrets
+    </h1>
+    <p style="font-size: 1.25rem; color: #495057; margin-bottom: 20px">
+      Don't keep your secrets, share them anonymously!
+    </p>
+    <hr style="border: 1px solid #dee2e6; margin: 20px 0" />
+    <a
+      href="/register"
+      style="
+        display: inline-block;
+        text-decoration: none;
+        color: #212529;
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        margin-right: 10px;
+      "
+      role="button"
+    >
+      Register
+    </a>
+    <a
+      href="/login"
+      style="
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #343a40;
+        border: 1px solid #343a40;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.25rem;
+      "
+      role="button"
+    >
+      Login
+    </a>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs') %>
